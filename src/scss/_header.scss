@@ -1,0 +1,20 @@
+.header {}
+
+.collection-header {
+
+  // .collection-header__pic
+
+  &__pic {
+    img {
+      object-fit: cover;
+    }
+
+    @media (min-width: $breakpoint768) {
+      img {
+        height: 200px;
+      }
+    }
+  }
+}
+
+// Header
