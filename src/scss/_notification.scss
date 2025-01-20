@@ -75,4 +75,30 @@
     border: 0;
     outline: 0;
   }
+
+  .quests__item-columns {
+    flex-wrap: nowrap;
+  }
+
+  .quests__item-column {
+
+    // white-space: nowrap;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -ms-line-clamp: 1;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    display: -webkit-box;
+    display: box;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+  }
+
+  .quests__item-column--min {
+    min-width: 44px;
+    white-space: nowrap;
+  }
 }
