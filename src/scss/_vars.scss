@@ -14,21 +14,22 @@ $burgerColor: 'black';
 $burgerActiveColor: 'white';
 
 :root {
-    // fonts
-    --font-family: "SF Pro", sans-serif;
-    --second-family: "Open Sans", sans-serif;
+  // fonts
+  --font-family: "SF Pro", sans-serif;
+  --second-family: "Open Sans", sans-serif;
 
-    //colors
-    --primary-color: #0085ff;
-    --primary-light-color: #97bbff;
-    --secondary-gray-xlight: #c0c4cb;
-    --root-surface-overlay: #fff;
-    --root-divider: #e3e7ec;
-    --root-surface-border: #e3e7ec;
-    --root-surface-ground: #e9f4ff;
-    --text-black: #1b1d20;
-    --text-white: #fff;
-    --text-secondary-gray-light: #858d9b;
-    --icon-gray-dark: #858d9b;
-    --icon-gray-light: #c0c4cb;
+  //colors
+  --secondary-orange: #ffaa47;
+  --primary-color: #0085ff;
+  --primary-light-color: #97bbff;
+  --secondary-gray-xlight: #c0c4cb;
+  --root-surface-overlay: #fff;
+  --root-divider: #e3e7ec;
+  --root-surface-border: #e3e7ec;
+  --root-surface-ground: #e9f4ff;
+  --text-black: #1b1d20;
+  --text-white: #fff;
+  --text-secondary-gray-light: #858d9b;
+  --icon-gray-dark: #858d9b;
+  --icon-gray-light: #c0c4cb;
 }

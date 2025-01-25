@@ -148,7 +148,55 @@ function historyReadSlide() {
   }
 }
 
-historyReadSlide()
+historyReadSlide();
+
+document.addEventListener("DOMContentLoaded", () => {
+  const starContainer = document.querySelector(".starfalls");
+
+  if (!starContainer) {
+    return null
+  }
+
+  const starCount = 15; // Количество звёзд одновременно
+
+  // Функция создания звезды
+  function createStar() {
+    const star = document.createElement("div");
+    star.classList.add("starfall");
+    star.innerHTML = '<img src="./img/icons/img-star-2.png" alt="star icon">';
+
+    // Случайная позиция по горизонтали
+    const randomX = Math.random() * 100;
+    star.style.left = `${randomX}%`;
+
+    // Добавляем звезду в контейнер
+    starContainer.appendChild(star);
+
+    // Анимация появления звезды
+    gsap.fromTo(
+      star,
+      { y: "100%", opacity: 0 },
+      {
+        y: "-10%", // Уходит вверх за пределы экрана
+        opacity: 1,
+        duration: gsap.utils.random(8, 15), // Случайная длительность анимации
+        ease: "power1.out",
+        onComplete: () => {
+          // Удаляем звезду после завершения анимации
+          star.remove();
+          // Создаём новую звезду
+          createStar();
+        },
+      }
+    );
+  }
+
+  // Создаём начальный набор звёзд
+  for (let i = 0; i < starCount; i++) {
+    setTimeout(createStar, i * 500); // Добавляем задержку между появлениями звёзд
+  }
+});
+
 
 
 
