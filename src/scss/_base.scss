@@ -26,6 +26,22 @@
 
 }
 
+.chest-bg {
+  background-image: image-set(url('/img/chest/bg.png') 1x type('image/webp'),
+      url('/img/chest/bg.png') 1x,
+      url('/img/chest/bg@2x.webp') 2x type('image/webp'),
+      url('/img/chest/bg@2x.png') 2x);
+  background-image: -webkit-image-set(url('/img/chest/bg.webp') 1x type('image/webp'),
+      url('/img/chest/bg.png') 1x,
+      url('/img/chest/bg@2x.webp') 2x type('image/webp'),
+      url('/img/chest/bg@2x.png') 2x);
+
+  background-repeat: no-repeat;
+  background-position: top;
+  background-position-y: center;
+  background-size: cover;
+}
+
 .main-btn {
   display: flex;
   align-items: center;
