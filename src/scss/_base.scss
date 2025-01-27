@@ -9,6 +9,46 @@
   }
 }
 
+.main {
+  &:has(.qr-code) {
+    display: flex;
+  }
+}
+
+.qr-code {
+  max-width: 244px;
+  margin: auto;
+  height: 100%;
+
+  // .qr-code__rows
+
+  &__rows {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+
+  // .qr-code__row
+
+  &__row {
+    border-radius: 16px;
+    padding: 8px;
+    background-color: var(--root-surface-overlay);
+
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--text-black);
+  }
+
+  // .qr-code__text
+
+  &__text {}
+}
+
+
 .start-bg {
   background-image: image-set(url('/img/bg/start-bg.webp') 1x type('image/webp'),
       url('/img/bg/start-bg.jpg') 1x,

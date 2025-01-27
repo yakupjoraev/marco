@@ -111,7 +111,7 @@
   // .chest__block
 
   &__block {
-    margin: 16px 0;
+    // margin: 16px 0;
   }
 
   // .chest__block-head
@@ -200,7 +200,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 8px;
-    margin-top: 16px;
+    padding: 16px 0;
   }
 
   // .chest__item
@@ -218,6 +218,7 @@
   // .chest__item-pic
 
   &__item-pic {
+    position: relative;
     border-radius: 8px;
     width: 56px;
     min-width: 56px;
@@ -225,7 +226,7 @@
     margin-top: -4px;
     margin-left: -4px;
     margin-bottom: -4px;
-    overflow: hidden;
+    // overflow: hidden;
 
     img {
       max-width: 100%;
@@ -240,6 +241,7 @@
   &__item-info {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
   }
 
   // .chest__item-label
@@ -295,6 +297,11 @@
     padding: 8px;
     border-radius: 6px;
     background-color: var(--root-surface-ground);
+
+    &--transparent {
+      background-color: transparent;
+      column-gap: 4px;
+    }
   }
 
   // .chest__item-stars
@@ -472,4 +479,43 @@
     text-align: center;
     color: var(--text-black);
   }
+}
+
+.chest__item-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  border: 0;
+  outline: 0;
+  background-color: var(--primary-color);
+}
+
+.chest__item-action-delete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  border: 0;
+  outline: 0;
+  background-color: var(--root-surface-ground);
+}
+
+.chest__item-action-apply {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  border: 0;
+  outline: 0;
+  background-color: var(--primary-color);
 }
