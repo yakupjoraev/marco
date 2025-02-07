@@ -11,8 +11,9 @@ function collectionSlider() {
   const paginationItems = document.querySelectorAll('.collection__slider-pagination-item');
 
   const swiper = new Swiper('.collection__slider', {
-    slidesPerView: 'auto',
+    slidesPerView: 1.6,
     centeredSlides: true,
+    spaceBetween: 32,
     effect: 'coverflow',
     coverflowEffect: {
       rotate: 0,

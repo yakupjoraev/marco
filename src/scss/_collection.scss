@@ -119,7 +119,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70%;
+    // width: 70%;
 
     &.veil {
       .collection__slide-pic {
@@ -150,7 +150,7 @@
   // .collection__slide-pic
 
   &__slide-pic {
-    width: 70%;
+    // width: 70%;
     height: 100%;
     border-radius: 8px;
     overflow: hidden;
@@ -316,7 +316,7 @@
 
   &__slide-status {
     position: absolute;
-    width: 70%;
+    // width: 70%;
     height: 100%;
     padding: 16px;
     display: flex;
