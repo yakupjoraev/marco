@@ -54,14 +54,14 @@
 
 
 .start-bg {
-  background-image: image-set(url('/img/bg/start-bg.webp') 1x type('image/webp'),
-      url('/img/bg/start-bg.jpg') 1x,
-      url('/img/bg/start-bg@2x.webp') 2x type('image/webp'),
-      url('/img/bg/start-bg@2x.jpg') 2x);
-  background-image: -webkit-image-set(url('/img/bg/start-bg.webp') 1x type('image/webp'),
-      url('/img/bg/start-bg.jpg') 1x,
-      url('/img/bg/start-bg@2x.webp') 2x type('image/webp'),
-      url('/img/bg/start-bg@2x.jpg') 2x);
+  background-image: image-set(url('../img/bg/start-bg.webp') 1x type('image/webp'),
+      url('../img/bg/start-bg.jpg') 1x,
+      url('../img/bg/start-bg@2x.webp') 2x type('image/webp'),
+      url('../img/bg/start-bg@2x.jpg') 2x);
+  background-image: -webkit-image-set(url('../img/bg/start-bg.webp') 1x type('image/webp'),
+      url('../img/bg/start-bg.jpg') 1x,
+      url('../img/bg/start-bg@2x.webp') 2x type('image/webp'),
+      url('../img/bg/start-bg@2x.jpg') 2x);
 
   background-repeat: no-repeat;
   background-position: top;
@@ -71,14 +71,14 @@
 }
 
 .chest-bg {
-  background-image: image-set(url('/img/chest/bg.png') 1x type('image/webp'),
-      url('/img/chest/bg.png') 1x,
-      url('/img/chest/bg@2x.webp') 2x type('image/webp'),
-      url('/img/chest/bg@2x.png') 2x);
-  background-image: -webkit-image-set(url('/img/chest/bg.webp') 1x type('image/webp'),
-      url('/img/chest/bg.png') 1x,
-      url('/img/chest/bg@2x.webp') 2x type('image/webp'),
-      url('/img/chest/bg@2x.png') 2x);
+  background-image: image-set(url('../img/chest/bg.png') 1x type('image/webp'),
+      url('../img/chest/bg.png') 1x,
+      url('../img/chest/bg@2x.webp') 2x type('image/webp'),
+      url('../img/chest/bg@2x.png') 2x);
+  background-image: -webkit-image-set(url('../img/chest/bg.webp') 1x type('image/webp'),
+      url('../img/chest/bg.png') 1x,
+      url('../img/chest/bg@2x.webp') 2x type('image/webp'),
+      url('../img/chest/bg@2x.png') 2x);
 
   background-repeat: no-repeat;
   background-position: top;
