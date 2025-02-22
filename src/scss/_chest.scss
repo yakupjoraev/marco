@@ -146,6 +146,7 @@
   &__buff {
     display: grid;
     grid-auto-flow: column;
+    justify-content: flex-start;
     column-gap: 12px;
     row-gap: 12px;
     padding: 16px 0;
@@ -158,6 +159,7 @@
 
   &__buff-item {
     position: relative;
+    width: fit-content;
   }
 
   // .chest__buff-icon
