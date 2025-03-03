@@ -443,6 +443,24 @@ body.locked {
   opacity: 0.4;
 }
 
+.bg-lvl-2 {
+  background-image: url("../img/lvl/lvl-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-lvl-3 {
+  background-image: url("../img/lvl/lvl-3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-lvl-4 {
+  background-image: url("../img/lvl/lvl-4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .collection-header__pic img {
   -o-object-fit: cover;
      object-fit: cover;
