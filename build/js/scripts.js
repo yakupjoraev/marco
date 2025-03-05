@@ -1,6 +1,27 @@
 // Custom Scripts
 // Custom scripts
 
+function scrollChest() {
+  const header = document.querySelector('.chest__header');
+
+  if (!header) return;
+
+  window.addEventListener('scroll', () => {
+    const rect = header.getBoundingClientRect();
+
+    if (rect.top < 0) {
+      header.classList.add('scroll');
+    } else {
+      header.classList.remove('scroll');
+    }
+  });
+}
+
+scrollChest();
+
+
+
+
 function collectionSlider() {
   const container = document.querySelector('.collection__slider-container');
 
@@ -334,6 +355,8 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(createStar, i * 500); // Добавляем задержку между появлениями звёзд
   }
 });
+
+
 
 
 

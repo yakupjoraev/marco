@@ -657,6 +657,8 @@ body.locked {
   height: 100%;
   border-radius: 8px;
   overflow: hidden;
+  -webkit-box-shadow: 0px 6px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 6px 8px 0px rgba(34, 60, 80, 0.2);
 }
 
 .collection__slider-pagination {
@@ -1234,9 +1236,9 @@ body.locked {
   left: 0;
   width: 100%;
   height: 100%;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
-  background: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .frag-disabled::after {
@@ -1247,8 +1249,8 @@ body.locked {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 10px;
-  height: 16px;
+  width: 14px;
+  height: 18px;
   background-image: url("../img/icons/frag-question.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -2681,6 +2683,7 @@ body.locked {
   -webkit-column-gap: 8px;
      -moz-column-gap: 8px;
           column-gap: 8px;
+  margin: 8px 0;
 }
 
 .quests__block-label {
@@ -3185,6 +3188,7 @@ body.locked {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 2px;
+  margin-bottom: 8px;
 }
 
 .bonus__top {
@@ -3346,7 +3350,7 @@ body.locked {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: calc(100dvh - 60px);
+  height: calc(100dvh - 80px);
   background-image: url("../img/game/layers/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -3896,12 +3900,37 @@ body.locked {
 }
 
 .chest__header {
-  padding: 12px;
   height: 120px;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.chest__header.scroll {
+  height: 60px;
+}
+
+.chest__header.scroll .chest__header-fixed {
+  top: 0;
+  height: 60px;
+  border-radius: 0;
+}
+
+.chest__header-fixed {
+  position: fixed;
+  z-index: 2;
+  top: 12px;
+  left: 12px;
+  width: calc(100% - 24px);
+  height: 120px;
+  padding: 12px;
   background-image: url("../img/chest/header-chest.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 12px 12px 0 0;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .chest__header-row {
@@ -4028,9 +4057,16 @@ body.locked {
           column-gap: 12px;
   row-gap: 12px;
   padding: 16px 0;
+  margin-bottom: 16px;
   margin-right: -16px;
   overflow: hidden;
   overflow-x: auto;
+}
+
+.chest__buff--center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .chest__buff-item {
@@ -4082,7 +4118,7 @@ body.locked {
   padding: 16px 0;
 }
 
-.chest__item {
+.chest__item-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4627,6 +4663,10 @@ body.locked {
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
+.modal-content.not-border-rounded {
+  border-radius: 0;
+}
+
 .modal.show .modal-content {
   opacity: 1;
   -webkit-transform: translateY(0);
@@ -4963,8 +5003,6 @@ body.locked {
 }
 
 .modal-chest__pic--big-stars {
-  max-width: 100%;
-  width: 100%;
   height: 120px;
 }
 
@@ -4984,7 +5022,7 @@ body.locked {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  row-gap: 8px;
+  row-gap: 16px;
   padding: 0 20px;
 }
 
@@ -5091,6 +5129,8 @@ body.locked {
 }
 
 .modal-chest__bottom {
+  position: sticky;
+  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5243,6 +5283,9 @@ body.locked {
 }
 
 .modal-chest__stars-label {
+  font-weight: 700;
+  font-size: 11px;
+  text-transform: uppercase;
   margin-bottom: 16px;
 }
 
@@ -5323,9 +5366,9 @@ body.locked {
   max-width: 540px;
   width: 100%;
   margin: 0 auto;
-  height: 60px;
-  padding: 8px 24px;
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  height: 80px;
+  padding: 8px 24px 28px;
+  border-top: 0.33px solid rgba(0, 0, 0, 0.3);
   background-color: var(--text-white);
 }
 
