@@ -21,8 +21,6 @@
   background-color: rgba(0, 0, 0, 0.4);
   opacity: 0;
   transition: opacity 0.2s linear, bottom 0.2s linear;
-
-
 }
 
 .modal.show {
@@ -641,5 +639,16 @@
     line-height: 120%;
     text-align: center;
     color: var(--root-surface-overlay);
+  }
+}
+
+.chest-modal {
+  .modal-content {
+    width: 90%;
+    padding: 0;
+  }
+
+  .chest__header-close {
+    background-color: rgba(255, 255, 255, .92);
   }
 }

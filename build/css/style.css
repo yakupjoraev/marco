@@ -5356,6 +5356,15 @@ body.locked {
   color: var(--root-surface-overlay);
 }
 
+.chest-modal .modal-content {
+  width: 90%;
+  padding: 0;
+}
+
+.chest-modal .chest__header-close {
+  background-color: rgba(255, 255, 255, 0.92);
+}
+
 .footer {
   position: fixed;
   z-index: 10;
