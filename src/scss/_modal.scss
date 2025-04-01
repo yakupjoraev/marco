@@ -644,18 +644,26 @@
 
 .chest-modal {
   .modal-content {
+    position: relative;
     width: 94%;
+    height: 94%;
     margin: 60px auto 0;
     padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 
   .chest__header-close {
+    top: 11px;
     background-color: rgba(255, 255, 255, .92);
   }
 
-  .chest__header-fixed {
-    top: 0;
-    left: 0;
-    width: 100%;
+
+  .chest {
+    border-radius: 0;
+
+    &::before {
+      border-radius: 0;
+    }
   }
 }

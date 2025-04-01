@@ -1,22 +1,34 @@
 // Custom scripts
 
 function scrollChest() {
-  const header = document.querySelector('.chest__header');
+  const modal = document.querySelector('.chest-modal .modal-content');
+  const header = document.querySelector('[data-chest-header]');
 
-  if (!header) return;
+  if (!modal || !header) return;
 
-  window.addEventListener('scroll', () => {
-    const rect = header.getBoundingClientRect();
+  let scrollableElement = modal;
 
-    if (rect.top < 0) {
-      header.classList.add('scroll');
+  const updateClass = () => {
+    if (scrollableElement.scrollTop > 10) {
+      if (!header.classList.contains('scroll')) {
+        header.classList.add('scroll');
+      }
     } else {
-      header.classList.remove('scroll');
+      if (header.classList.contains('scroll')) {
+        header.classList.remove('scroll');
+      }
     }
-  });
+  };
+
+  scrollableElement.addEventListener('scroll', updateClass);
+  updateClass();
 }
 
-scrollChest();
+document.addEventListener('DOMContentLoaded', scrollChest);
+
+
+
+
 
 
 
@@ -175,15 +187,15 @@ function historySlider() {
       centeredSlides: !isFull,
       spaceBetween: isFull ? 0 : 32,
       effect: isFull ? 'slide' : 'coverflow',
-      navigation: isFull
-        ? {
+      navigation: isFull ?
+        {
           nextEl: '.history__next',
           prevEl: '.history__prev',
-        }
-        : false,
-      coverflowEffect: isFull
-        ? {}
-        : {
+        } :
+        false,
+      coverflowEffect: isFull ?
+        {} :
+        {
           rotate: 0,
           depth: 200,
           stretch: 30,
@@ -332,20 +344,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Анимация появления звезды
     gsap.fromTo(
-      star,
-      { y: "100%", opacity: 0 },
-      {
-        y: "-10%", // Уходит вверх за пределы экрана
-        opacity: 1,
-        duration: gsap.utils.random(8, 15), // Случайная длительность анимации
-        ease: "power1.out",
-        onComplete: () => {
-          // Удаляем звезду после завершения анимации
-          star.remove();
-          // Создаём новую звезду
-          createStar();
-        },
-      }
+      star, {
+      y: "100%",
+      opacity: 0
+    }, {
+      y: "-10%", // Уходит вверх за пределы экрана
+      opacity: 1,
+      duration: gsap.utils.random(8, 15), // Случайная длительность анимации
+      ease: "power1.out",
+      onComplete: () => {
+        // Удаляем звезду после завершения анимации
+        star.remove();
+        // Создаём новую звезду
+        createStar();
+      },
+    }
     );
   }
 
