@@ -30,16 +30,16 @@
 
     &~.modal-content {
       margin-top: 0 !important;
-      border-radius: 0 !important;
+      border-radius: 12px !important;
     }
 
     &.scroll {
-      height: 60px;
+      height: 72px;
 
       .chest__header-fixed {
         // position: fixed;
         // top: 60px;
-        margin-top: 40px;
+        margin-top: 70px;
         z-index: 2;
         border-radius: 0;
         height: 60px;
@@ -58,12 +58,9 @@
       }
 
       &~.modal-content {
-        // margin-top: 60px !important;
-        border-radius: 12px 12px 0 0 !important;
-
         .chest {
           // margin-top: 60px;      
-          border-radius: 12px 12px 0 0;
+          border-radius: 12px;
         }
       }
     }

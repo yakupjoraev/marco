@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-  margin: 40px 20px;
+  margin: 100px 20px;
 }
 
 .modal {
@@ -646,7 +646,7 @@
   .modal-content {
     position: relative;
     width: 94%;
-    height: 94%;
+    height: calc(100% - 92px);
     margin: 60px auto 0;
     padding: 0;
     overflow-x: hidden;

@@ -3906,15 +3906,15 @@ body.locked {
 
 .chest__header ~ .modal-content {
   margin-top: 0 !important;
-  border-radius: 0 !important;
+  border-radius: 12px !important;
 }
 
 .chest__header.scroll {
-  height: 60px;
+  height: 72px;
 }
 
 .chest__header.scroll .chest__header-fixed {
-  margin-top: 40px;
+  margin-top: 70px;
   z-index: 2;
   border-radius: 0;
   height: 60px;
@@ -3932,12 +3932,8 @@ body.locked {
   padding-bottom: 5px;
 }
 
-.chest__header.scroll ~ .modal-content {
-  border-radius: 12px 12px 0 0 !important;
-}
-
 .chest__header.scroll ~ .modal-content .chest {
-  border-radius: 12px 12px 0 0;
+  border-radius: 12px;
 }
 
 .chest__header-fixed {
@@ -4639,7 +4635,7 @@ body.locked {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 20px;
-  margin: 40px 20px;
+  margin: 100px 20px;
 }
 
 .modal {
@@ -5387,7 +5383,7 @@ body.locked {
 .chest-modal .modal-content {
   position: relative;
   width: 94%;
-  height: 94%;
+  height: calc(100% - 92px);
   margin: 60px auto 0;
   padding: 0;
   overflow-x: hidden;
