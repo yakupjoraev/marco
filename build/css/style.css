@@ -3914,7 +3914,7 @@ body.locked {
 }
 
 .chest__header.scroll .chest__header-fixed {
-  margin-top: 0;
+  margin-top: 40px;
   z-index: 2;
   border-radius: 0;
   height: 60px;
@@ -3930,6 +3930,14 @@ body.locked {
 
 .chest__header.scroll .chest__header-stars {
   padding-bottom: 5px;
+}
+
+.chest__header.scroll ~ .modal-content {
+  border-radius: 12px 12px 0 0 !important;
+}
+
+.chest__header.scroll ~ .modal-content .chest {
+  border-radius: 12px 12px 0 0;
 }
 
 .chest__header-fixed {
