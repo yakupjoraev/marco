@@ -5525,6 +5525,58 @@ body.locked {
   }
 }
 
+@media (max-width: 567px) {
+  .game {
+    height: calc(100dvh - 60px);
+    padding-bottom: 60px;
+  }
+
+  .info {
+    margin-bottom: 10px;
+  }
+
+  .info__block-img img {
+    width: 20px;
+  }
+
+  .info__block-sum {
+    font-size: 12px;
+  }
+
+  .info__lavel-head-text {
+    font-size: 10px;
+  }
+
+  .info__balance {
+    padding: 8px;
+  }
+
+  .info__balance-sum {
+    font-size: 28px;
+  }
+
+  .boxes__list {
+    margin: 10px auto;
+  }
+
+  .boxes__item {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+  }
+
+  .boxes__item img {
+    width: 60px;
+    height: 60px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .footer {
+    height: 60px;
+  }
+}
+
 @media (max-width: 479.98px) {
   .container {
     max-width: none;

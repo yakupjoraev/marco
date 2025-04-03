@@ -13,6 +13,10 @@
   border-top: 0.33px solid rgba(0, 0, 0, 0.3);
   background-color: var(--text-white);
 
+  @media (max-width: 567px) {
+    height: 60px;
+  }
+
   // .footer__nav
 
   &__nav {}
