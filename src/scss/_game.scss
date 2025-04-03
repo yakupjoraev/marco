@@ -314,6 +314,9 @@
     grid-template-columns: repeat(5, 1fr);
     justify-items: center;
     justify-content: center;
+    width: fit-content;
+    column-gap: 1px;
+    row-gap: 1px;
     margin: 20px auto;
     padding: 0 16px;
 
