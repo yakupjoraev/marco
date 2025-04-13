@@ -3568,7 +3568,7 @@ body.locked {
      -moz-column-gap: 8px;
           column-gap: 8px;
   width: 100%;
-  padding: 4px 12px;
+  padding: 5px 12px;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -3949,7 +3949,7 @@ body.locked {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  margin: 60px 0 0;
+  margin: 70px 0 0;
   max-width: 540px;
   width: 94%;
   height: 120px;
