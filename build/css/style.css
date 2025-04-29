@@ -3913,30 +3913,25 @@ body.locked {
 
 .chest__header ~ .modal-content {
   margin-top: 0 !important;
-  border-radius: 12px !important;
+  border-radius: 0 0 12px 12px !important;
 }
 
 .chest__header.scroll {
-  height: 72px;
+  height: 86px;
 }
 
 .chest__header.scroll .chest__header-fixed {
-  margin-top: 70px;
+  margin-top: 74px;
   z-index: 2;
   border-radius: 0;
   height: 60px;
   width: 94%;
   border-radius: 12px 12px 0 0;
-  background-image: url("../img/chest/header-chest-scroll.png");
 }
 
 .chest__header.scroll .close-modal-btn {
   top: 11px;
   height: 40px;
-}
-
-.chest__header.scroll .chest__header-stars {
-  padding-bottom: 5px;
 }
 
 .chest__header.scroll ~ .modal-content .chest {
@@ -3949,7 +3944,7 @@ body.locked {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  margin: 70px 0 0;
+  margin: 74px 0 0;
   max-width: 540px;
   width: 94%;
   height: 120px;

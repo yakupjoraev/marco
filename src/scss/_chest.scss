@@ -30,22 +30,22 @@
 
     &~.modal-content {
       margin-top: 0 !important;
-      border-radius: 12px !important;
+      border-radius: 0 0 12px 12px !important;
     }
 
     &.scroll {
-      height: 72px;
+      height: 86px;
 
       .chest__header-fixed {
         // position: fixed;
         // top: 60px;
-        margin-top: 70px;
+        margin-top: 74px;
         z-index: 2;
         border-radius: 0;
         height: 60px;
         width: 94%;
         border-radius: 12px 12px 0 0;
-        background-image: url('../img/chest/header-chest-scroll.png');
+        // background-image: url('../img/chest/header-chest-scroll.png');
       }
 
       .close-modal-btn {
@@ -54,7 +54,7 @@
       }
 
       .chest__header-stars {
-        padding-bottom: 5px;
+        // padding-bottom: 5px;
       }
 
       &~.modal-content {
@@ -72,7 +72,7 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    margin: 70px 0 0;
+    margin: 74px 0 0;
     max-width: 540px;
     // width: calc(100% - 24px);
     width: 94%;
