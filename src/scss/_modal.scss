@@ -52,6 +52,10 @@
   transform: translateY(0);
 }
 
+.modal.show .chest__header.scroll~.modal-content {
+  border-radius: 12px !important;
+}
+
 .close-modal-btn {
   position: absolute;
   top: 24px;

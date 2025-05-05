@@ -224,7 +224,7 @@ body.locked {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
 }
 
 .main:has(.qr-code) {
@@ -377,7 +377,7 @@ body.locked {
 .add-user {
   position: fixed;
   z-index: 2;
-  bottom: 80px;
+  bottom: 96px;
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
@@ -2574,13 +2574,14 @@ body.locked {
 
 .history.full .history__slider-container {
   position: fixed;
-  top: 8px;
+  top: 84px;
   left: 50%;
+  max-width: 540px;
+  width: calc(100% - 32px);
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: calc(100% - 16px);
-  height: calc(100% - 70px);
+  height: calc(100% - 90px);
 }
 
 .history__footer {
@@ -3921,7 +3922,7 @@ body.locked {
 }
 
 .chest__header.scroll .chest__header-fixed {
-  margin-top: 74px;
+  margin-top: 84px;
   z-index: 2;
   border-radius: 0;
   height: 60px;
@@ -3944,7 +3945,7 @@ body.locked {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  margin: 74px 0 0;
+  margin: 84px 0 0;
   max-width: 540px;
   width: 94%;
   height: 120px;
@@ -4696,6 +4697,10 @@ body.locked {
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
           transform: translateY(0);
+}
+
+.modal.show .chest__header.scroll ~ .modal-content {
+  border-radius: 12px !important;
 }
 
 .close-modal-btn {

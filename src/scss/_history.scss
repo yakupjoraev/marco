@@ -280,11 +280,12 @@
 
     .history__slider-container {
       position: fixed;
-      top: 8px;
+      top: 84px;
       left: 50%;
+      max-width: 540px;
+      width: calc(100% - 32px);
       transform: translateX(-50%);
-      width: calc(100% - 16px);
-      height: calc(100% - 70px);
+      height: calc(100% - 90px);
     }
   }
 
